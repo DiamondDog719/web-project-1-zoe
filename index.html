@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokémon Pokopia Ability Guide</title>
+    <title>Pokémon Pokopia Moves Guide</title>
   </head>
   <body>
     <!--
@@ -11,7 +11,7 @@
       Course: Web Development 10S
       Teacher: Mr. Hardman
       School: Pembina Trails Collegiate
-      Date Last Modified: Oct. 30, 2026
+      Date Last Modified: Nov. 5, 2026
     -->
     <header>
       <nav>
@@ -37,36 +37,225 @@
           </li>
         </ul>
       </nav>
-      <h1>How to Use the Abilities in Pokémon Pokopia</h1>
+      <h1>How to Use Moves in Pokémon Pokopia</h1>
     </header>
     <main>
+      <!--Section for move information-->
+      <section>
+        <p>
+          Moves are abilities Ditto (the player) can use in
+          <i>Pokémon Pokopia</i>. They are one of the most important game
+          mechanics as they are important for getting around, collecting
+          materials, and interacting with the world.
+        </p>
+        <p>
+          As of the time of writing, there are 11 major moves in the game. They
+          are:
+        </p>
+        <ul>
+          <li>Water Gun</li>
+          <li>Leafage</li>
+          <li>Rock Smash</li>
+          <li>Rototiller</li>
+          <li>Cut</li>
+          <li>Camouflage</li>
+          <li>Rollout</li>
+          <li>Magnet Rise</li>
+          <li>Surf</li>
+          <li>Dive</li>
+          <li>Glide</li>
+        </ul>
+        <p>
+          Jump, Strength, and Suck up Liquid are also considered moves but
+          aren't complex enough to need much description. Waterfall is another
+          move that is included in the page for Surf.
+        </p>
+      </section>
+      <!--Section for PP Points-->
+      <section>
+        <h2><u>PP Points</u></h2>
+        <p>
+          Moves in <i>Pokémon Pokopia</i> use PP (Power Points). A curved bar in
+          your circular move menu shows how much you have left. You need enough
+          PP to use moves, so make sure to use them wisely.
+        </p>
+        <p>
+          PP can be restored by eating food or resting in a Pokémon Centre. Some
+          foods (such as cooked dishes) will restore more PP than others.
+        </p>
+      </section>
+      <br />
       <p>
-        Abilities are one of the most important game mechanics in
-        <i>Pokémon Pokopia</i>. They are important for getting around and
-        interacting with the world.
+        Below is an embedded YouTube video on how to unlock abilities you might
+        miss in <i>Pokémon Pokopia</i>.
       </p>
+      <figure>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/P4U9lYiPExo?si=oGUINQV4m6lcNPl-"
+          title="IGN YouTube video: Don't Miss These Abilities in Pokopia"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+          Your browser does not support embedded content.
+        </iframe>
+        <figcaption>
+          <a href="https://www.youtube.com/watch?v=P4U9lYiPExo" target="_blank"
+            >Link to the embedded YouTube video above</a
+          >
+        </figcaption>
+      </figure>
+      <h2><u>Pokémon Pokopia Gameplay Survey</u></h2>
       <p>
-        As of the time of writing, there are (INSERT NUMBER) major abilities in
-        the game. They are:
+        Disclaimer: This website was made for a school project, and no personal
+        or confidential information should be entered into the form below!
       </p>
-      <ul>
-        <li>Water Gun</li>
-        <li>Leafage</li>
-        <li>Rock Smash</li>
-        <li>Rototiller</li>
-        <li>Cut</li>
-        <li>Camouflage</li>
-        <li>Rollout</li>
-        <li>Magnet Rise</li>
-        <li>Surf</li>
-        <li>Dive</li>
-        <li>Glide</li>
-      </ul>
-      <p>
-        Jump and Strength are also considered moves but aren't complex enough to
-        need much description. Waterfall is another move that is included in the
-        page for Surf.
-      </p>
+      <!--Pokopia Gameplay Survey Form-->
+      <form id="gameplay-survey" name="gameplay-survey" method="get">
+        <!--Fieldset for the user's favourite town-->
+        <fieldset form="gameplay-survey">
+          <legend>What is Your Favourite Town?</legend>
+          <!--Radio button inputs allow you to select an option by clicking the circle, the names are the same so the user can only select one option.-->
+          <input
+            type="radio"
+            id="withered-wasteland"
+            name="fav-town"
+            value="withered-wasteland" />
+          <label for="withered-wasteland">Withered Wasteland</label>
+          <br />
+          <input
+            type="radio"
+            id="bleak-beach"
+            name="fav-town"
+            value="bleak-beach" />
+          <label>Bleak Beach</label>
+          <br />
+          <input
+            type="radio"
+            id="rocky-ridges"
+            name="fav-town"
+            value="rocky-ridges" />
+          <label>Rocky Ridges</label>
+          <br />
+          <input
+            type="radio"
+            id="sparkling-skylands"
+            name="fav-town"
+            value="sparkling-skylands" />
+          <label>Sparkling Skylands</label>
+          <br />
+          <input
+            type="radio"
+            id="palette-town"
+            name="fav-town"
+            value="palette-town" />
+          <label>Palette Town</label>
+          <br />
+          <input
+            type="radio"
+            id="bubbly-basin"
+            name="fav-town"
+            value="bubbly-basin" />
+          <label>Bubbly Basin (DLC)</label>
+        </fieldset>
+        <br />
+        <!--Fieldset for the ability the user uses the most-->
+        <fieldset form="gameplay-survey">
+          <legend>What Ability Do You Use The Most?</legend>
+          <input type="radio" id="water-gun" name="ability" value="water-gun" />
+          <label>Water Gun</label>
+          <br />
+          <input type="radio" id="leafage" name="ability" value="leafage" />
+          <label>Leafage</label>
+          <br />
+          <input
+            type="radio"
+            id="rock-smash"
+            name="ability"
+            value="rock-smash" />
+          <label>Rock Smash</label>
+          <br />
+          <input
+            type="radio"
+            id="rototiller"
+            name="ability"
+            value="rototiller" />
+          <label>Rototiller</label>
+          <br />
+          <input type="radio" id="cut" name="ability" value="cut" />
+          <label>Cut</label>
+          <br />
+          <input
+            type="radio"
+            id="camouflage"
+            name="ability"
+            value="camouflage" />
+          <label>Camouflage</label>
+          <br />
+          <input type="radio" id="rollout" name="ability" value="rollout" />
+          <label>Rollout</label>
+          <br />
+          <input
+            type="radio"
+            id="magnet-rise"
+            name="ability"
+            value="magnet-rise" />
+          <label>Magnet Rise</label>
+          <br />
+          <input type="radio" id="surf" name="ability" value="surf" />
+          <label>Surf</label>
+          <br />
+          <input type="radio" id="dive" name="ability" value="dive" />
+          <label>Dive</label>
+          <br />
+          <input type="radio" id="glide" name="ability" value="glide" />
+          <label>Glide</label>
+        </fieldset>
+        <br />
+        <label
+          >If You Have Palette Town Unlocked, What Did You Choose to Name
+          it?</label
+        >
+        <!--This input allows the user to enter text to send to the developer.-->
+        <input type="text" name="town-name" id="town-name" />
+        <br />
+        <label>What month did you start playing Pokémon Pokopia?</label>
+        <br />
+        <!--This month input allows the user to enter a specific month from a calendar pop-up, but not a year or date.-->
+        <input type="month" name="month-start" id="month-start" />
+        <br />
+        <label>How many hours have you played Pokémon Pokopia for?</label>
+        <br />
+        <!--This input allows the user to enter a number, but not letters.-->
+        <input type="number" name="num-hours" id="num-hours" />
+        <br />
+        <br />
+        <!--This input will submit the form.-->
+        <input
+          type="submit"
+          name="submit"
+          id="submit"
+          value="Submit this Form" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!--
+          This input will reset the form.
+          The line breaks are there to make sure someone doesn't accidentally press it instead of submit.
+        -->
+        <input type="reset" name="reset" id="reset" value="Reset this Form" />
+      </form>
     </main>
     <br />
     <br />
